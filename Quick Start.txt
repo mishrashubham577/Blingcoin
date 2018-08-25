@@ -1,0 +1,20 @@
+CMD commands:
+
+cd directory-name
+python generated_genesis.py
+python blingcoin.py
+ 
+On executing blingcoin.py file
+
+- type h for help (or To know all commands)
+- then i to initiate wallet and to know the total wallet money.
+- and t for transaction 
+- q for quit 
+- use b for broadcast(to update the transaction block on both ends)
+ 
+
+Prerequisite: Python 2.7.10
+
+
+Note: Follow "Error_resolved" and "Readme" file for more information.
+
