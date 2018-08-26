@@ -6,51 +6,11 @@ Note that this is a PoC that runs only on local networks and does not provide pr
 
 This project was created as an exercise after reading "Mastering Bitcoin: unlocking digital cryptocurrencies".
 
-## Material covered
-
-- Transaction-based mining as a PoC for a blockchain-free cryptocurrency
-- Threading in Python
-- Working with sockets in Python (UDP)
-- ECC crypto / ECC public key compression/decompression
-- Base58 encoding like bitcoin
-- Having the whole thing work (wallet, crypto, validation, networking, mining, etc)
-
 ## Project's purpose
 
 The purpose of this project is to have people learn about the basic workings of a cryptocurrency. I've tried to create a simple-as-possible framework to play with. The current code allows nodes to exchange coins on a local network.  
 
 In its current state the application does not handle consensus forks. Also, you can perform some double-spending attacks and easily out-mine other nodes. No smart transaction confirmation graphing is implemented to outwit blockchain implementations. However, this is the whole point. These methods are not implemented, but because the code is so simple you can easily try out ideas to see how and if they work. Thus, I hope that the project can be an addition to both complete beginners in the field of cryptocurrencies as well as researchers or advanced coders that want to test new ideas. 
-
-## Blockchain-free cryptocurrencies
-
-Most cryptocurrencies use a blockchain to validate transactions among other things. After years of running these networks it's beginning to look like blockchain-based currencies naturally evolve into a centralised network, because it's in the best interest of the participants to combine computing power to calculate solutions for blocks.
-
-An interesting framework for a blockchain-free protocol is discussed in the paper "Blockchain-Free Cryptocurrencies: A Framework for Truly Decentralised Fast Transactions".
-
-Do note that blingcoin doesn't implement nearly as complex a protocol as described in the paper. But the transaction-based mining method was used as an inspiration for implementing the 'core' for blingcoin.
-
-## Component basics
-
-- Wallets
-  - A wallet consists of a public/private keypair and an address. The address is derived from the public key.
-  
-- Transactions
-  - A transaction contains inputs, outputs and a unique identifier (called 'hash').
-  - An output has a unique identifier and is just an amount and a 'to'-address.
-  - An input points to a previous output, and uses the coins from that output. It must contain a compressed public key and a signature. This way nodes can identify that the 'to'-address from the previous output, which can be generated with the public key, is owned by the spender.
-
-- The GUI
-  - When you create a transaction, a confirmation is created and both the transaction and the confirmation are shared on the network (UDP broadcast).
-  - When using the broadcast option `b`, your blingcoin node will broadcast a request packet on the network. Any blingcoin node receiving the request will send all transactions and confirmations to you. This is so new nodes can 'sync'.
-
-- Network server (UDP)
-  - When the server receives a new transaction, it checks if the transaction is valid and adds it to the database ('ledger').
-  - When a confirmation is received, the transaction's confirmation is updated if the received difficulty is higher than the existing difficulty.
-
-- Mining and confirmations
-  - Confirmations are proof of work hashes for a transaction.
-  - The mining component simply creates confirmations for some transaction.
-  - Mining is done by hardening the transaction confirmation with the least difficulty.
 
 ## Usage
 
@@ -117,11 +77,7 @@ On node A, type `t` to make a transaction.
 At `To: ` you enter the wallet address for node B. At `Amount: ` just enter a small number like 137.
 Now if you press `i` on both nodes, you should see that the coins are transferred. Sometimes you need to type `b` on node B to sync the two.
 
-You can now transfer coins from device A to device B and back as mentioned in the screenshot:
-
-![Alt text](https://raw.githubusercontent.com/mishub/Blingcoin/master/Receiver Wallet.png "Transfering coins")
-![Alt text](https://raw.githubusercontent.com/mishub/Blingcoin/master/Sender Wallet.png "Transfering coins")
-
+You can now transfer coins from device A to device B and back as mentioned in the screenshots.
 
 ## Common problems
 
