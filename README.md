@@ -1,4 +1,4 @@
-![](https://i.imgur.com/oNIXwQF.png)
+                                         ![](https://i.imgur.com/NAGngaI.png)
 
 # Blingcoin
  
