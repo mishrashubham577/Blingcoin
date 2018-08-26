@@ -1,4 +1,4 @@
-# blingcoin
+# Blingcoin
  
 blingcoin is a very basic blockchain-free cryptocurrency PoC in Python. It's a project for discovering cryptocurrencies.
 
@@ -118,6 +118,9 @@ At `To: ` you enter the wallet address for node B. At `Amount: ` just enter a sm
 Now if you press `i` on both nodes, you should see that the coins are transferred. Sometimes you need to type `b` on node B to sync the two.
 
 You can now transfer coins from device A to device B and back as mentioned in the screenshot:
+
+![Alt text](https://raw.githubusercontent.com/mishub/Blingcoin/master/Receiver Wallet.png "Transfering coins")
+![Alt text](https://raw.githubusercontent.com/mishub/Blingcoin/master/Sender Wallet.png "Transfering coins")
 
 
 ## Common problems
