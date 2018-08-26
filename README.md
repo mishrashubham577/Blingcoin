@@ -1,3 +1,5 @@
+![](https://i.imgur.com/zGGZpSn.png)
+
 # Blingcoin
  
 Blingcoin is a very basic blockchain-free cryptocurrency PoC in Python. It's a project for discovering cryptocurrencies.
