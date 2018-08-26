@@ -1,4 +1,4 @@
-![](https://i.imgur.com/NAGngaI.png#center)
+<img src="https://i.imgur.com/NAGngaI.png" width="8%"></i
 
 # Blingcoin 
  
