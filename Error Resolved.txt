@@ -1,0 +1,13 @@
+If you are using both python2 and python3 on your Windows machine, you may get an error so Here's how i resolved it:
+
+
+1. Add (or verify correct path)
+
+C:\Python35;C:\Python35\Scripts;C:\Python27;C:\Python27\Scripts 
+to environment variable PATH.
+
+3. Now, Go to C:\Python35 to rename python.exe to python3.exe, also to C:\Python27, rename python.exe to python2.exe.
+
+4. Restart your command window.
+
+5. Now, Type "python2 scriptname.py" in command line to switch the version to python2x (recommended for this project). 
