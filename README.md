@@ -1,4 +1,4 @@
-  <img style="float: center;" src="https://i.imgur.com/NAGngaI.png">
+![](https://i.imgur.com/IysZgy8.png#center)
 
 # Blingcoin
  
