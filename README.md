@@ -80,7 +80,7 @@ At `To: ` you enter the wallet address for node B. At `Amount: ` just enter a sm
 Now if you press `i` on both nodes, you should see that the coins are transferred. Sometimes you need to type `b` on node B to sync the two.
 
 You can now transfer coins from device A to device B and back as mentioned in the screenshots.
-![](https://i.imgur.com/banDdLY.png) ![](https://i.imgur.com/N1boSDF.png)
+![](https://i.imgur.com/IysZgy8.png)![](https://i.imgur.com/de21Vqq.png)
 
 ## Common problems
 
