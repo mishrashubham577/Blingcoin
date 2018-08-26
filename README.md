@@ -1,6 +1,6 @@
 # Blingcoin
  
-blingcoin is a very basic blockchain-free cryptocurrency PoC in Python. It's a project for discovering cryptocurrencies.
+Blingcoin is a very basic blockchain-free cryptocurrency PoC in Python. It's a project for discovering cryptocurrencies.
 
 Note that this is a PoC that runs only on local networks and does not provide proper security. The code should only be used to get familiar with the building blocks for a cryptocurrency.
 
