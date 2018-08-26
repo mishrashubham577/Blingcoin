@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/NAGngaI.png" width="8%"></i
+<img src="https://i.imgur.com/NAGngaI.png" width="8%"></img>
 
 # Blingcoin 
  
